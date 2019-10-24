@@ -19,6 +19,9 @@
     <Filter Include="Development =========\Tools\PugiXML">
       <UniqueIdentifier>{6acff7d7-87f4-47b7-a9c2-49ff60ca3957}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Development =========\Scene">
+      <UniqueIdentifier>{b04c70a2-8371-40a8-8335-6f8913348cb3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="p2Defs.h">
@@ -69,6 +72,9 @@
     <ClInclude Include="j1Map.h">
       <Filter>Development =========\Modules\Basics</Filter>
     </ClInclude>
+    <ClInclude Include="j1Scene.h">
+      <Filter>Development =========\Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="p2Log.cpp">
@@ -101,5 +107,13 @@
     <ClCompile Include="j1Map.cpp">
       <Filter>Development =========\Modules\Basics</Filter>
     </ClCompile>
+    <ClCompile Include="j1Scene.cpp">
+      <Filter>Development =========\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Game\config.xml">
+      <Filter>Development =========</Filter>
+    </Xml>
   </ItemGroup>
 </Project>
