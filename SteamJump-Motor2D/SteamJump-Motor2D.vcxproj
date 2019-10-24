@@ -121,11 +121,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="j1App.h" />
+    <ClInclude Include="j1Module.h" />
     <ClInclude Include="p2Defs.h" />
     <ClInclude Include="p2DynArray.h" />
+    <ClInclude Include="p2List.h" />
     <ClInclude Include="p2Log.h" />
+    <ClInclude Include="p2Point.h" />
+    <ClInclude Include="p2SString.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="j1App.cpp" />
+    <ClCompile Include="j1Main.cpp" />
     <ClCompile Include="p2Log.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -4,6 +4,9 @@
     <Filter Include="UtilityClasses">
       <UniqueIdentifier>{87cd22a3-53f8-43ea-b4a5-25832cd10e29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Development =========">
+      <UniqueIdentifier>{d7edc349-28f9-4a1d-87c0-31ff09dcf5ba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="p2Defs.h">
@@ -15,10 +18,31 @@
     <ClInclude Include="p2Log.h">
       <Filter>UtilityClasses</Filter>
     </ClInclude>
+    <ClInclude Include="p2List.h">
+      <Filter>UtilityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Point.h">
+      <Filter>UtilityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="p2SString.h">
+      <Filter>UtilityClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Module.h">
+      <Filter>Development =========</Filter>
+    </ClInclude>
+    <ClInclude Include="j1App.h">
+      <Filter>Development =========</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="p2Log.cpp">
       <Filter>UtilityClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="j1App.cpp">
+      <Filter>Development =========</Filter>
+    </ClCompile>
+    <ClCompile Include="j1Main.cpp">
+      <Filter>Development =========</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
