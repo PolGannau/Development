@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="75">
+<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="205">
  <tileset firstgid="1" source="Map.tsx"/>
  <layer id="1" name="Background" width="288" height="24">
   <data encoding="csv">
@@ -187,5 +187,129 @@
   <object id="72" name="PLATFORM" x="64" y="512" width="32" height="32"/>
   <object id="73" name="PLATFORM" x="128.5" y="160" width="222" height="32"/>
   <object id="74" name="PLATFORM" x="128" y="672" width="479" height="32"/>
+  <object id="76" name="PLATFORM" x="2111.5" y="736" width="193" height="32"/>
+  <object id="77" name="PLATFORM" x="2399.5" y="448" width="225" height="32"/>
+  <object id="78" name="PLATFORM" x="2783.5" y="416" width="225" height="32"/>
+  <object id="79" name="PLATFORM" x="2208.5" y="33" width="158" height="32"/>
+  <object id="80" name="PLATFORM" x="2400" y="129" width="94" height="32"/>
+  <object id="81" name="PLATFORM" x="2113" y="96" width="94" height="32"/>
+  <object id="82" name="PLATFORM" x="2657" y="95" width="94" height="32"/>
+  <object id="83" name="PLATFORM" x="2849" y="32" width="94" height="32"/>
+  <object id="84" name="PLATFORM" x="2241" y="384" width="94" height="32"/>
+  <object id="85" name="PLATFORM" x="1343.5" y="96" width="193" height="32"/>
+  <object id="86" name="PLATFORM" x="1759.5" y="417" width="193" height="32"/>
+  <object id="87" name="PLATFORM" x="1311.5" y="448" width="193" height="32"/>
+  <object id="88" name="PLATFORM" x="1151.5" y="577" width="193" height="32"/>
+  <object id="89" name="PLATFORM" x="1087.5" y="737" width="193" height="32"/>
+  <object id="90" name="PLATFORM" x="1343.5" y="672" width="224" height="32"/>
+  <object id="91" name="PLATFORM" x="1120.5" y="255" width="158" height="32"/>
+  <object id="92" name="PLATFORM" x="1761" y="192" width="158" height="32"/>
+  <object id="93" name="PLATFORM" x="1153" y="0" width="94" height="32"/>
+  <object id="94" name="PLATFORM" x="1762" y="32" width="94" height="32"/>
+  <object id="95" name="PLATFORM" x="1248" y="65" width="32" height="32"/>
+  <object id="96" name="PLATFORM" x="1216" y="160" width="32" height="32"/>
+  <object id="97" name="PLATFORM" x="1632" y="0" width="32" height="32"/>
+  <object id="98" name="PLATFORM" x="1632" y="161" width="32" height="32"/>
+  <object id="99" name="PLATFORM" x="1408" y="257" width="32" height="32"/>
+  <object id="100" name="PLATFORM" x="1568" y="289" width="32" height="32"/>
+  <object id="101" name="PLATFORM" x="1664" y="352" width="32" height="32"/>
+  <object id="102" name="PLATFORM" x="1472" y="352" width="32" height="32"/>
+  <object id="103" name="PLATFORM" x="1792" y="480" width="32" height="32"/>
+  <object id="104" name="PLATFORM" x="1632" y="544" width="32" height="32"/>
+  <object id="105" name="PLATFORM" x="1504" y="608" width="32" height="32"/>
+  <object id="106" name="PLATFORM" x="2336" y="160" width="32" height="32"/>
+  <object id="107" name="PLATFORM" x="2560" y="32" width="32" height="32"/>
+  <object id="108" name="PLATFORM" x="2784" y="64" width="32" height="32"/>
+  <object id="109" name="PLATFORM" x="2528" y="193" width="32" height="32"/>
+  <object id="110" name="PLATFORM" x="2880" y="224" width="32" height="32"/>
+  <object id="111" name="PLATFORM" x="2720" y="288" width="32" height="32"/>
+  <object id="112" name="PLATFORM" x="2815" y="320" width="32" height="32"/>
+  <object id="113" name="PLATFORM" x="2208" y="321" width="32" height="32"/>
+  <object id="114" name="PLATFORM" x="2688" y="480" width="32" height="32"/>
+  <object id="115" name="PLATFORM" x="2752" y="576" width="32" height="32"/>
+  <object id="116" name="PLATFORM" x="2528" y="544" width="32" height="32"/>
+  <object id="118" name="PLATFORM" x="2335.5" y="256" width="352" height="32"/>
+  <object id="119" name="PLATFORM" x="2368" y="673" width="542" height="32"/>
+  <object id="121" name="PLATFORM" x="3519" y="736" width="352" height="32"/>
+  <object id="122" name="PLATFORM" x="3232" y="641" width="254" height="32"/>
+  <object id="124" name="PLATFORM" x="3457" y="353" width="254" height="32"/>
+  <object id="125" name="PLATFORM" x="3679" y="481" width="159" height="32"/>
+  <object id="126" name="PLATFORM" x="3681.5" y="640" width="221" height="32"/>
+  <object id="127" name="PLATFORM" x="3776.5" y="385" width="191" height="32"/>
+  <object id="128" name="PLATFORM" x="3136.5" y="736" width="191" height="32"/>
+  <object id="130" name="PLATFORM" x="3488.5" y="192" width="191" height="32"/>
+  <object id="131" name="PLATFORM" x="3520.5" y="32" width="191" height="32"/>
+  <object id="132" name="PLATFORM" x="3360.5" y="512" width="125" height="32"/>
+  <object id="134" name="PLATFORM" x="3233.5" y="64" width="125" height="32"/>
+  <object id="135" name="PLATFORM" x="3298.5" y="417" width="91" height="32"/>
+  <object id="136" name="PLATFORM" x="3393" y="737" width="32" height="32"/>
+  <object id="137" name="PLATFORM" x="3265" y="575" width="32" height="32"/>
+  <object id="138" name="PLATFORM" x="3168" y="543" width="32" height="32"/>
+  <object id="139" name="PLATFORM" x="3232" y="480" width="32" height="32"/>
+  <object id="140" name="PLATFORM" x="3519" y="575" width="32" height="32"/>
+  <object id="141" name="PLATFORM" x="3617" y="577" width="32" height="32"/>
+  <object id="142" name="PLATFORM" x="3583" y="513" width="32" height="32"/>
+  <object id="143" name="PLATFORM" x="3936" y="546" width="32" height="32"/>
+  <object id="144" name="PLATFORM" x="3873" y="193" width="32" height="32"/>
+  <object id="145" name="PLATFORM" x="3967" y="158" width="32" height="32"/>
+  <object id="146" name="PLATFORM" x="3905" y="66" width="32" height="32"/>
+  <object id="147" name="PLATFORM" x="3809" y="32" width="32" height="32"/>
+  <object id="148" name="PLATFORM" x="3776" y="128" width="32" height="32"/>
+  <object id="149" name="PLATFORM" x="3391" y="127" width="32" height="32"/>
+  <object id="150" name="PLATFORM" x="3296" y="192" width="32" height="32"/>
+  <object id="151" name="PLATFORM" x="3200" y="161" width="32" height="32"/>
+  <object id="152" name="PLATFORM" x="4512" y="738" width="32" height="32"/>
+  <object id="153" name="PLATFORM" x="4704" y="736" width="32" height="32"/>
+  <object id="154" name="PLATFORM" x="4928" y="737" width="32" height="32"/>
+  <object id="155" name="PLATFORM" x="5024" y="641" width="32" height="32"/>
+  <object id="156" name="PLATFORM" x="4833" y="641" width="32" height="32"/>
+  <object id="157" name="PLATFORM" x="4608" y="640" width="32" height="32"/>
+  <object id="158" name="PLATFORM" x="4383" y="671" width="32" height="32"/>
+  <object id="159" name="PLATFORM" x="4257" y="640" width="32" height="32"/>
+  <object id="160" name="PLATFORM" x="4192" y="608" width="32" height="32"/>
+  <object id="161" name="PLATFORM" x="4322" y="576" width="32" height="32"/>
+  <object id="162" name="PLATFORM" x="4447" y="545" width="32" height="32"/>
+  <object id="163" name="PLATFORM" x="4544" y="576" width="32" height="32"/>
+  <object id="164" name="PLATFORM" x="4703" y="513" width="32" height="32"/>
+  <object id="165" name="PLATFORM" x="4864" y="512" width="32" height="32"/>
+  <object id="166" name="PLATFORM" x="4961" y="545" width="32" height="32"/>
+  <object id="167" name="PLATFORM" x="5024" y="449" width="32" height="32"/>
+  <object id="168" name="PLATFORM" x="4833" y="418" width="32" height="32"/>
+  <object id="169" name="PLATFORM" x="4674" y="385" width="32" height="32"/>
+  <object id="170" name="PLATFORM" x="4543" y="449" width="32" height="32"/>
+  <object id="171" name="PLATFORM" x="4384" y="416" width="32" height="32"/>
+  <object id="172" name="PLATFORM" x="4290" y="513" width="32" height="32"/>
+  <object id="173" name="PLATFORM" x="4222" y="448" width="32" height="32"/>
+  <object id="174" name="PLATFORM" x="4287" y="384" width="32" height="32"/>
+  <object id="175" name="PLATFORM" x="4257" y="289" width="32" height="32"/>
+  <object id="176" name="PLATFORM" x="4161" y="320" width="32" height="32"/>
+  <object id="177" name="PLATFORM" x="4415" y="291" width="32" height="32"/>
+  <object id="178" name="PLATFORM" x="4513" y="258" width="32" height="32"/>
+  <object id="179" name="PLATFORM" x="4576" y="319" width="32" height="32"/>
+  <object id="180" name="PLATFORM" x="4671" y="287" width="32" height="32"/>
+  <object id="181" name="PLATFORM" x="4802" y="289" width="32" height="32"/>
+  <object id="182" name="PLATFORM" x="4990" y="319" width="32" height="32"/>
+  <object id="183" name="PLATFORM" x="4896" y="258" width="32" height="32"/>
+  <object id="184" name="PLATFORM" x="5024" y="193" width="32" height="32"/>
+  <object id="185" name="PLATFORM" x="4959" y="95" width="32" height="32"/>
+  <object id="186" name="PLATFORM" x="5024" y="30" width="32" height="32"/>
+  <object id="187" name="PLATFORM" x="4927" y="-2" width="32" height="32"/>
+  <object id="188" name="PLATFORM" x="4862" y="64" width="32" height="32"/>
+  <object id="189" name="PLATFORM" x="4799" y="160" width="32" height="32"/>
+  <object id="190" name="PLATFORM" x="4736" y="226" width="32" height="32"/>
+  <object id="191" name="PLATFORM" x="4610" y="161" width="32" height="32"/>
+  <object id="192" name="PLATFORM" x="4672" y="130" width="32" height="32"/>
+  <object id="193" name="PLATFORM" x="4639" y="34" width="32" height="32"/>
+  <object id="194" name="PLATFORM" x="4737" y="1" width="32" height="32"/>
+  <object id="195" name="PLATFORM" x="4511" y="0" width="32" height="32"/>
+  <object id="196" name="PLATFORM" x="4415" y="31" width="32" height="32"/>
+  <object id="197" name="PLATFORM" x="4480" y="128" width="32" height="32"/>
+  <object id="198" name="PLATFORM" x="4352" y="192" width="32" height="32"/>
+  <object id="199" name="PLATFORM" x="4192" y="191" width="32" height="32"/>
+  <object id="200" name="PLATFORM" x="4288" y="127" width="32" height="32"/>
+  <object id="201" name="PLATFORM" x="4126" y="97" width="32" height="32"/>
+  <object id="202" name="PLATFORM" x="4255" y="33" width="32" height="32"/>
+  <object id="203" name="PLATFORM" x="4159" y="-1" width="32" height="32"/>
+  <object id="204" name="PLATFORM" x="4159.5" y="736" width="193" height="32"/>
  </objectgroup>
 </map>
