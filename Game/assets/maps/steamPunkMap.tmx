@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="1">
+<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="30">
  <tileset firstgid="1" source="Map.tsx"/>
  <layer id="1" name="Background" width="288" height="24">
   <data encoding="csv">
@@ -113,4 +113,35 @@
 0,0,8,9,9,9,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,9,9,9,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,9,9,9,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,9,9,9,9,10,0,0,16,0,0,0,8,9,9,9,9,9,9,9,9,9,10,0,0,0,0,0,0,0,0,0,8,12,9,12,9,10,0,0,0,0,0,16,0,0,0,0,0,16,0,0,0,0,0,0,16,0,0,0,0,0,0,0,8,9,9,9,9,10,0,0,0,0,0,8,9,9,10,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,20,22,22,22,22,22,22,24,0,0,0,0,0,0,0,0,0,8,9,9,9,9,10,0,0,0,0,0,0,0,0,0,20,22,22,22,22,22,22,24,0,0,0,0,0,0,8,9,9,9,9,9,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="6" name="COLLIDERS">
+  <object id="1" name="WALL" x="0" y="0" width="32" height="770"/>
+  <object id="2" name="WALL" x="993" y="0" width="61" height="769"/>
+  <object id="3" name="WALL" x="2017.5" y="-0.5" width="61" height="769"/>
+  <object id="4" name="WALL" x="3040.5" y="-0.5" width="61" height="769"/>
+  <object id="5" name="WALL" x="4065.5" y="0.5" width="61" height="769"/>
+  <object id="6" name="WALL" x="5089.5" y="0.5" width="61" height="769"/>
+  <object id="7" name="WALL" x="6112.5" y="-0.5" width="61" height="769"/>
+  <object id="8" name="WALL" x="7137.5" y="0.5" width="61" height="769"/>
+  <object id="9" name="WALL" x="8161.5" y="-0.5" width="61" height="769"/>
+  <object id="10" name="WALL" x="9184" y="-2" width="32" height="770"/>
+  <object id="11" name="WALL" x="8224.5" y="1.5" width="959" height="62"/>
+  <object id="12" name="WALL" x="7200.5" y="322" width="863" height="30"/>
+  <object id="13" name="WALL" x="7296.5" y="161" width="863" height="30"/>
+  <object id="14" name="WALL" x="7199.5" y="737" width="222" height="30"/>
+  <object id="15" name="WALL" x="7201" y="32" width="92" height="30"/>
+  <object id="16" name="WALL" x="7201" y="160" width="31" height="30"/>
+  <object id="17" name="WALL" x="8129.5" y="482" width="31" height="30"/>
+  <object id="18" name="WALL" x="8128.5" y="320" width="31" height="30"/>
+  <object id="19" name="WALL" x="7199.5" y="449" width="31" height="30"/>
+  <object id="20" name="WALL" x="7200.5" y="609" width="62" height="30"/>
+  <object id="21" name="WALL" x="6305.5" y="512" width="702" height="30"/>
+  <object id="22" name="WALL" x="6688" y="226" width="223" height="30"/>
+  <object id="23" name="WALL" x="6177.5" y="737" width="223" height="30"/>
+  <object id="24" name="WALL" x="6977.5" y="704" width="157" height="30"/>
+  <object id="25" name="WALL" x="6399.5" y="226" width="223" height="30"/>
+  <object id="26" name="WALL" x="6174.5" y="225" width="162" height="30"/>
+  <object id="27" name="WALL" x="6974" y="224" width="162" height="30"/>
+  <object id="28" name="WALL" x="6174" y="514" width="64" height="30"/>
+  <object id="29" name="WALL" x="7072" y="513" width="64" height="30"/>
+ </objectgroup>
 </map>
