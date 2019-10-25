@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="30">
+<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="50">
  <tileset firstgid="1" source="Map.tsx"/>
  <layer id="1" name="Background" width="288" height="24">
   <data encoding="csv">
@@ -143,5 +143,24 @@
   <object id="27" name="WALL" x="6974" y="224" width="162" height="30"/>
   <object id="28" name="WALL" x="6174" y="514" width="64" height="30"/>
   <object id="29" name="WALL" x="7072" y="513" width="64" height="30"/>
+  <object id="30" name="WALL" x="5151" y="289" width="64" height="30"/>
+  <object id="31" name="WALL" x="5151" y="449" width="127" height="30"/>
+  <object id="33" name="WALL" x="5983.5" y="704" width="127" height="30"/>
+  <object id="34" name="WALL" x="5151.5" y="96" width="192" height="30"/>
+  <object id="35" name="WALL" x="5890" y="160" width="219" height="30"/>
+  <object id="36" name="WALL" x="5152.5" y="608" width="222" height="30"/>
+  <object id="37" name="WALL" x="3906.5" y="705" width="156" height="30"/>
+  <object id="38" name="WALL" x="3103" y="96" width="95" height="30"/>
+  <object id="39" name="WALL" x="3103.5" y="416" width="95" height="30"/>
+  <object id="40" name="WALL" x="3102.5" y="674" width="66" height="30"/>
+  <object id="41" name="WALL" x="3103.5" y="256" width="446" height="30"/>
+  <object id="42" name="WALL" x="3618" y="256" width="446" height="30"/>
+  <object id="43" name="WALL" x="2080" y="447" width="160" height="30"/>
+  <object id="44" name="WALL" x="2080" y="256" width="127" height="30"/>
+  <object id="45" name="WALL" x="2946.5" y="608" width="91" height="30"/>
+  <object id="46" name="WALL" x="1665.5" y="673" width="350" height="30"/>
+  <object id="47" name="WALL" x="32.5" y="576" width="319" height="30"/>
+  <object id="48" name="WALL" x="896.5" y="576" width="94" height="30"/>
+  <object id="49" name="WALL" x="962" y="480" width="30" height="30"/>
  </objectgroup>
 </map>
