@@ -25,7 +25,13 @@
   </file_system>
 
   <map>
-    <folder>maps/</folder>
+    <folder>assets/maps/</folder>
   </map>
+  
+  <audio>
+  </audio>
+  
+  <scene>
+  </scene>
   
 </config>

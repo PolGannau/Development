@@ -173,7 +173,7 @@ bool j1Map::Load(const char* file_name)
 	bool ret = true;
 	p2SString tmp("maps\\%s", folder.GetString(), file_name);
 
-	pugi::xml_parse_result result = map_file.load_file("maps/iso_walk.tmx");
+	pugi::xml_parse_result result = map_file.load_file("assets/maps/steamPunkMap.tmx");
 
 	if (result == NULL)
 	{
