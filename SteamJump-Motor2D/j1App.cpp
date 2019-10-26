@@ -64,6 +64,10 @@ void j1App::AddModule(j1Module* _module) {
 // Called before render is available
 bool j1App::Awake()
 {
+	pugi::xml_document	config_file;
+	pugi::xml_node		config;
+	pugi::xml_node		app_config;
+	pugi::xml_node		aux;
 	bool ret = false;
 	config = LoadConfig(config_file);
 
@@ -82,7 +86,8 @@ bool j1App::Awake()
 		item = modules.start;
 		while (item != NULL && ret == true)
 		{
-			ret = item->data->Awake(config.child(item->data->name.GetString()));
+			aux = config.child(item->data->name.GetString());
+			ret = item->data->Awake(aux);
 			item = item->next;
 		}
 	}
@@ -295,8 +300,9 @@ bool j1App::LoadGameNow()
 {
 	bool ret = false;
 
-	pugi::xml_document data;
-	pugi::xml_node root;
+	pugi::xml_document	data;
+	pugi::xml_node		root;
+	pugi::xml_node		aux;
 
 	pugi::xml_parse_result result = data.load_file(load_game.GetString());
 
@@ -311,7 +317,8 @@ bool j1App::LoadGameNow()
 
 		while (item != NULL && ret == true)
 		{
-			ret = item->data->Load(root.child(item->data->name.GetString()));
+			aux = root.child(item->data->name.GetString());
+			ret = item->data->Load(aux);
 			item = item->next;
 		}
 
@@ -335,8 +342,9 @@ bool j1App::SavegameNow() const
 	LOG("Saving Game State to %s...", save_game.GetString());
 
 	// xml object were we will store all data
-	pugi::xml_document data;
-	pugi::xml_node root;
+	pugi::xml_document	data;
+	pugi::xml_node		root;
+	pugi::xml_node		aux;
 
 	root = data.append_child("game_state");
 
@@ -344,7 +352,8 @@ bool j1App::SavegameNow() const
 
 	while (item != NULL && ret == true)
 	{
-		ret = item->data->Save(root.append_child(item->data->name.GetString()));
+		aux = root.append_child(item->data->name.GetString());
+		ret = item->data->Save(aux);
 		item = item->next;
 	}
 
