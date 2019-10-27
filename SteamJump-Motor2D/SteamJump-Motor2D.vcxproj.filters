@@ -22,6 +22,9 @@
     <Filter Include="Development =========\Scene">
       <UniqueIdentifier>{b04c70a2-8371-40a8-8335-6f8913348cb3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Development =========\Modules\Collisions">
+      <UniqueIdentifier>{fb2b9eb3-208c-4b8b-b769-a471323302cc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="p2Defs.h">
@@ -75,6 +78,9 @@
     <ClInclude Include="j1Scene.h">
       <Filter>Development =========\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="j1CollisionManager.h">
+      <Filter>Development =========\Modules\Collisions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="p2Log.cpp">
@@ -109,6 +115,9 @@
     </ClCompile>
     <ClCompile Include="j1Scene.cpp">
       <Filter>Development =========\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="j1CollisionManager.cpp">
+      <Filter>Development =========\Modules\Collisions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -2,12 +2,15 @@
 #define __j1SCENE_H__
 
 #include "j1Module.h"
+#include "j1CollisionManager.h"
+#include "p2List.h"
 
 struct SDL_Texture;
 
 class j1Scene : public j1Module
 {
 public:
+	p2List<Collider*> colls;
 
 	j1Scene();
 

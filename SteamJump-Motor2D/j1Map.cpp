@@ -3,6 +3,7 @@
 #include "j1App.h"
 #include "j1Render.h"
 #include "j1Textures.h"
+#include "j1Scene.h"
 #include "j1Map.h"
 #include <math.h>
 
@@ -244,6 +245,23 @@ bool j1Map::Load(const char* file_name)
 			LOG("tile width: %d tile height: %d", l->width, l->height);
 			item_layer = item_layer->next;
 		}
+	}
+
+	pugi::xml_node object;
+	COLLIDER_TYPE t;
+	p2SString atr;
+	SDL_Rect rect;
+	for (object = map_file.child("map").child("objectgroup").child("object"); object && ret; object = object.next_sibling("object")) {
+		atr = object.attribute("name").as_string();
+		if (atr == "WALL")t = COLLIDER_SOLID;
+		else if (atr == "PLATFORM")t = COLLIDER_PLATFORM;
+		else if (atr == "END")t = COLLIDER_FINISH;
+		else if (atr == "DEATH")t = COLLIDER_DEATH;
+		rect.x = object.attribute("x").as_float();
+		rect.y = object.attribute("y").as_float();
+		rect.w = object.attribute("width").as_float();
+		rect.h = object.attribute("height").as_float();
+		App->scene->colls.add(App->collision->AddCollider(rect, t, nullptr));
 	}
 
 	map_loaded = ret;
