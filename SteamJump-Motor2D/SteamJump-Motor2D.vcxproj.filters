@@ -81,6 +81,12 @@
     <ClInclude Include="j1CollisionManager.h">
       <Filter>Development =========\Modules\Collisions</Filter>
     </ClInclude>
+    <ClInclude Include="j1FadeToBlack.h">
+      <Filter>Development =========\Modules\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="j1Globals.h">
+      <Filter>Development =========</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="p2Log.cpp">
@@ -118,6 +124,9 @@
     </ClCompile>
     <ClCompile Include="j1CollisionManager.cpp">
       <Filter>Development =========\Modules\Collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="j1FadeToBlack.cpp">
+      <Filter>Development =========\Modules\Basics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

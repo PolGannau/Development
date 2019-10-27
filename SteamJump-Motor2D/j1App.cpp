@@ -14,6 +14,7 @@
 #include "j1Map.h"
 #include "j1CollisionManager.h"
 #include "j1App.h"
+#include "j1FadeToBlack.h"
 
 // Constructor
 j1App::j1App(int argc, char* args[]) : argc(argc),args(args)
@@ -30,6 +31,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc),args(args)
 	scene = new j1Scene();
 	map = new j1Map();
 	collision = new j1Collision();
+	fade = new j1FadeToBlack();
 	// -------------------------------------------------
 
 	// Ordered for awake / Start / Update
@@ -41,6 +43,7 @@ j1App::j1App(int argc, char* args[]) : argc(argc),args(args)
 	AddModule(map);
 	AddModule(scene);
 	AddModule(collision);
+	AddModule(fade);
 
 	// Render last to swap buffer
 	AddModule(render);
