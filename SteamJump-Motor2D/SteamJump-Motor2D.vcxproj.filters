@@ -116,4 +116,9 @@
       <Filter>Development =========</Filter>
     </Xml>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Game\assets\maps\steamPunkMap.tmx">
+      <Filter>Development =========\Scene</Filter>
+    </None>
+  </ItemGroup>
 </Project>
