@@ -67,6 +67,8 @@ public:
 	void DebugDraw();
 	void SetColliderSize(Collider* collider, uint width, uint height);
 	bool GetGodModeState();
+
+	p2List<Collider*> colls;
 };
 
 #endif // !__j1COLLISIONMANAGER_H__

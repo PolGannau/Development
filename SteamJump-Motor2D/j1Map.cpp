@@ -261,7 +261,7 @@ bool j1Map::Load(const char* file_name)
 		rect.y = object.attribute("y").as_float();
 		rect.w = object.attribute("width").as_float();
 		rect.h = object.attribute("height").as_float();
-		App->scene->colls.add(App->collision->AddCollider(rect, t, nullptr));
+		App->collision->colls.add(App->collision->AddCollider(rect, t, nullptr));
 	}
 
 	map_loaded = ret;

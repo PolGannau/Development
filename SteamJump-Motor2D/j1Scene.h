@@ -10,7 +10,6 @@ struct SDL_Texture;
 class j1Scene : public j1Module
 {
 public:
-	p2List<Collider*> colls;
 
 	j1Scene();
 
