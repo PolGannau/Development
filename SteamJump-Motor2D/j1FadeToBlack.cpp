@@ -9,12 +9,14 @@
 #include "../SteamJump-Motor2D/SDL/include/SDL_render.h"
 #include "../SteamJump-Motor2D/SDL/include/SDL_timer.h"
 
-j1FadeToBlack::j1FadeToBlack()
-{
+bool j1FadeToBlack::Awake(pugi::xml_node&) {
 	name.create("fade");
+
 	uint width, height = 0u;
 	App->win->GetWindowSize(width, height);
-	screen = { 0,0,(int)width*(int)App->win->GetScale(), (int)height*(int)App->win->GetScale()};
+
+	screen = { 0,0,(int)width * (int)App->win->GetScale(),(int)height * (int)App->win->GetScale() };
+	return true;
 }
 
 j1FadeToBlack::~j1FadeToBlack()
@@ -27,7 +29,7 @@ bool j1FadeToBlack::Start()
 	return true;
 }
 
-bool j1FadeToBlack::Update()
+bool j1FadeToBlack::PostUpdate()
 {
 	bool ret = true;
 	if (current_step == fade_step::none)

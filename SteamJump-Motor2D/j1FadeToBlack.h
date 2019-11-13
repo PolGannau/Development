@@ -10,8 +10,9 @@ public:
 	j1FadeToBlack();
 	~j1FadeToBlack();
 
+	bool Awake(pugi::xml_node&);
 	bool Start();
-	bool Update();
+	bool PostUpdate();
 	bool FadeToBlack(j1Module* module_off, j1Module* module_on, float time = 1.0F);
 	bool IsFading() const;
 
@@ -27,8 +28,8 @@ private:
 	Uint32 start_time = 0;
 	Uint32 total_time = 0;
 	SDL_Rect screen;
-	j1Module* to_enable = nullptr;
-	j1Module* to_disable = nullptr;
+	float fadingPerCent = 0.0F;
+	p2SString lvlToLoad;
 };
 
 #endif // !__J1FADETOBLACK_H__
