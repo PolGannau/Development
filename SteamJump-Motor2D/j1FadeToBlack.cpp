@@ -2,7 +2,7 @@
 #include "j1App.h"
 #include "j1FadeToBlack.h"
 #include "j1Render.h"
-#include "j1Globals.h"
+#include "p2Defs.h"
 #include "j1Window.h"
 #include "p2Log.h"
 
@@ -36,38 +36,31 @@ bool j1FadeToBlack::PostUpdate()
 		return ret;
 
 	Uint32 now = SDL_GetTicks() - start_time;
-	float normalized = MIN(1.0F, (float)now / (float)total_time);
+	
+	if (current_step == fade_step::fade_to_black) {
+		fadingPerCent = MIN(1.0F, ((float)now * 2.0F) / (float)total_time);
+		if (now >= total_time * 0.5F) {
 
-	switch (current_step)
-	{
-	case fade_step::fade_to_black:
-	{
-		if (now >= total_time)
-		{
-			to_disable->Disable();
-			to_enable->Enable();
-			total_time += total_time;
-			start_time = SDL_GetTicks();
+			// TODO: Change from level to leve here with all the necessary changes
+
 			current_step = fade_step::fade_from_black;
 		}
-	} break;
-
-	case fade_step::fade_from_black:
-	{
-		normalized = 1.0F - normalized;
-
-		if (now >= total_time)
+	}
+	else if (current_step == fade_step::fade_from_black) {
+		fadingPerCent = MAX(0.0F, 2.0F - ((float)now * 2.0F) / (float)total_time);
+		if (now >= total_time) {
 			current_step = fade_step::none;
-	} break;
+			fadingPerCent = 0.0F;
+		}
 	}
 
-	SDL_SetRenderDrawColor(App->render->renderer, 0, 0, 0, (Uint8)(normalized * 255.0F));
+	SDL_SetRenderDrawColor(App->render->renderer, 0, 0, 0, (Uint8)(fadingPerCent * 255.0F));
 	SDL_RenderFillRect(App->render->renderer, &screen);
 
 	return ret;
 }
 
-bool j1FadeToBlack::FadeToBlack(j1Module* module_off, j1Module* module_on, float time)
+bool j1FadeToBlack::FadeToBlack(const char* lvlname, float time)
 {
 	bool ret = false;
 
@@ -75,9 +68,10 @@ bool j1FadeToBlack::FadeToBlack(j1Module* module_off, j1Module* module_on, float
 	{
 		current_step = fade_step::fade_to_black;
 		start_time = SDL_GetTicks();
-		total_time = (Uint32)(time * 0.5F * 1000.0F);
-		to_enable = module_on;
-		to_disable = module_off;
+		total_time = (Uint32)(time * 1000.0F);
+		
+		// add the change to do while fading to black
+
 		ret = true;
 	}
 	return ret;
