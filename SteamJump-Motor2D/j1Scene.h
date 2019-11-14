@@ -7,6 +7,21 @@
 
 struct SDL_Texture;
 
+struct Level {
+private:
+	uint			currentLevel;
+	p2List<uint*>	levelSections;
+
+public:
+	uint GetCurrentLevel()const { return (uint)currentLevel; }
+
+	void GenerateLevelSections() {
+
+	}
+
+	// create functions to get level sections, to save and load
+};
+
 class j1Scene : public j1Module
 {
 public:
