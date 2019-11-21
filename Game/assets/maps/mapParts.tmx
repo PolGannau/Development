@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="25">
+<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="43">
  <tileset firstgid="1" name="Tileset" tilewidth="32" tileheight="32" spacing="1" margin="1" tilecount="49" columns="7">
   <image source="Tileset.png" width="256" height="256"/>
  </tileset>
@@ -27668,7 +27668,7 @@
    <tile/>
   </data>
  </layer>
- <objectgroup id="5" name="Colliders" locked="1">
+ <objectgroup id="5" name="Colliders">
   <object id="1" name="PLATFORM" x="65" y="224" width="222" height="30"/>
   <object id="4" name="WALL" x="-1" y="63" width="32" height="705"/>
   <object id="5" name="WALL" x="0" y="1.5" width="414" height="64"/>
@@ -27691,8 +27691,26 @@
   <object id="22" name="WALL" x="2975.5" y="32" width="63" height="32"/>
   <object id="23" name="WALL" x="2943.5" y="320" width="95" height="32"/>
   <object id="24" name="WALL" x="2081" y="544" width="158" height="32"/>
+  <object id="25" name="WALL" x="2079.33" y="704" width="256.5" height="32"/>
+  <object id="26" name="WALL" x="2880.25" y="416" width="161.5" height="32"/>
+  <object id="27" name="WALL" x="2848.75" y="575.5" width="192.5" height="32"/>
+  <object id="28" name="WALL" x="2752.75" y="671" width="289" height="32"/>
+  <object id="29" name="WALL" x="2624.5" y="192" width="416.5" height="32"/>
+  <object id="30" name="WALL" x="2240.75" y="31.5" width="638" height="32"/>
+  <object id="31" name="WALL" x="4256.08" y="287.333" width="287.167" height="32"/>
+  <object id="32" name="WALL" x="4032.75" y="416" width="32.5003" height="32"/>
+  <object id="33" name="WALL" x="6785.75" y="62.6667" width="348.5" height="32"/>
+  <object id="34" name="WALL" x="6176.42" y="33" width="320.5" height="32"/>
+  <object id="35" name="WALL" x="6946.75" y="287.667" width="185.833" height="32"/>
+  <object id="36" name="WALL" x="6176.75" y="192.667" width="128.5" height="32"/>
+  <object id="37" name="WALL" x="7201.75" y="704.333" width="349.833" height="32"/>
+  <object id="38" name="WALL" x="8964.75" y="544.333" width="152.5" height="32"/>
+  <object id="39" name="WALL" x="8708.08" y="287" width="411.166" height="32"/>
+  <object id="40" name="WALL" x="8192.75" y="288.667" width="411.166" height="32"/>
+  <object id="41" name="WALL" x="9057.42" y="64.6667" width="57.8327" height="32"/>
+  <object id="42" name="WALL" x="8193.75" y="31.3333" width="57.8327" height="32"/>
  </objectgroup>
- <layer id="6" name="Navigation" width="288" height="24" locked="1">
+ <layer id="6" name="Navigation" width="288" height="24" visible="0" locked="1">
   <properties>
    <property name="Navigation" type="int" value="1"/>
   </properties>
