@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="18">
+<map version="1.2" tiledversion="1.2.5" orientation="orthogonal" renderorder="right-down" width="288" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="25">
  <tileset firstgid="1" name="Tileset" tilewidth="32" tileheight="32" spacing="1" margin="1" tilecount="49" columns="7">
   <image source="Tileset.png" width="256" height="256"/>
  </tileset>
@@ -27668,7 +27668,7 @@
    <tile/>
   </data>
  </layer>
- <objectgroup id="5" name="Colliders">
+ <objectgroup id="5" name="Colliders" locked="1">
   <object id="1" name="PLATFORM" x="65" y="224" width="222" height="30"/>
   <object id="4" name="WALL" x="-1" y="63" width="32" height="705"/>
   <object id="5" name="WALL" x="0" y="1.5" width="414" height="64"/>
@@ -27684,6 +27684,13 @@
   <object id="15" name="WALL" x="7136.5" y="2" width="63" height="768"/>
   <object id="16" name="WALL" x="8128.5" y="0" width="63" height="768"/>
   <object id="17" name="WALL" x="9117.5" y="1" width="36" height="768"/>
+  <object id="18" name="WALL" x="2080.5" y="31" width="63" height="32"/>
+  <object id="19" name="WALL" x="2081.5" y="160" width="126" height="32"/>
+  <object id="20" name="WALL" x="2080.5" y="290" width="63" height="32"/>
+  <object id="21" name="WALL" x="2081.5" y="448" width="93" height="32"/>
+  <object id="22" name="WALL" x="2975.5" y="32" width="63" height="32"/>
+  <object id="23" name="WALL" x="2943.5" y="320" width="95" height="32"/>
+  <object id="24" name="WALL" x="2081" y="544" width="158" height="32"/>
  </objectgroup>
  <layer id="6" name="Navigation" width="288" height="24" locked="1">
   <properties>
