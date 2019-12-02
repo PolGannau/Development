@@ -84,6 +84,9 @@
     <ClInclude Include="j1FadeToBlack.h">
       <Filter>Development =========\Modules\Basics</Filter>
     </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Development =========\Modules\Basics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="p2Log.cpp">
